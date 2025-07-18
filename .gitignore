@@ -1,0 +1,4 @@
+node_modules
+mailbox-app/node_modules
+mailbox-app/dist
+mailbox-app/.angular
