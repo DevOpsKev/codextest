@@ -14,6 +14,10 @@ export class LoginComponent {
 
   constructor(private router: Router, private auth: AuthService) {}
 
+  ngOnInit() {
+  console.log('✅ LoginComponent loaded');
+}
+
   login() {
     if (this.email === 'admin@example.com' && this.password === 'Admin123!') {
       this.auth.setRole('admin');
@@ -26,9 +30,5 @@ export class LoginComponent {
     } else {
       this.error = 'Invalid credentials';
     }
-  username = '';
-  password = '';
-
-  login() {
   }
 }

@@ -1,20 +1,15 @@
 <form (ngSubmit)="login()">
-  <label>
+  <label for="email">
     Email
-    <input [(ngModel)]="email" name="email" type="email" required />
+    <input [(ngModel)]="email" name="email" id="email" type="email" required />
   </label>
-  <label>
+
+  <label for="password">
     Password
-    <input [(ngModel)]="password" type="password" name="password" required />
+    <input [(ngModel)]="password" name="password" id="password" type="password" required />
   </label>
-  <button type="submit">Login</button>
-  <p class="error" *ngIf="error">{{ error }}</p>
-    Username
-    <input [(ngModel)]="username" name="username" />
-  </label>
-  <label>
-    Password
-    <input [(ngModel)]="password" type="password" name="password" />
-  </label>
+
   <button type="submit">Login</button>
 
+  <p class="error" *ngIf="error">{{ error }}</p>
+</form>
