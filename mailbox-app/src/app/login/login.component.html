@@ -9,4 +9,12 @@
   </label>
   <button type="submit">Login</button>
   <p class="error" *ngIf="error">{{ error }}</p>
-</form>
+    Username
+    <input [(ngModel)]="username" name="username" />
+  </label>
+  <label>
+    Password
+    <input [(ngModel)]="password" type="password" name="password" />
+  </label>
+  <button type="submit">Login</button>
+

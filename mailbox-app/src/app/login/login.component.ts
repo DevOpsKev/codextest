@@ -26,5 +26,9 @@ export class LoginComponent {
     } else {
       this.error = 'Invalid credentials';
     }
+  username = '';
+  password = '';
+
+  login() {
   }
 }

@@ -6,6 +6,7 @@ import { AuthService } from '../auth.service';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
+
 export class DashboardComponent {
   role = this.auth.getRole();
 
