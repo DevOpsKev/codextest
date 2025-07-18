@@ -1,5 +1,14 @@
 <form (ngSubmit)="login()">
   <label>
+    Email
+    <input [(ngModel)]="email" name="email" type="email" required />
+  </label>
+  <label>
+    Password
+    <input [(ngModel)]="password" type="password" name="password" required />
+  </label>
+  <button type="submit">Login</button>
+  <p class="error" *ngIf="error">{{ error }}</p>
     Username
     <input [(ngModel)]="username" name="username" />
   </label>
@@ -8,4 +17,4 @@
     <input [(ngModel)]="password" type="password" name="password" />
   </label>
   <button type="submit">Login</button>
-</form>
+
